@@ -1,5 +1,3 @@
-# viktooar.github.io
-Service
 <!doctype html>
 <html lang="ru">
 <head>
