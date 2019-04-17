@@ -21,8 +21,19 @@
 
 <script>
 
-    navigator.mediaDevices.getUserMedia({
-        video: true
+  navigator.mediaDevices.getUserMedia({
+        video: {
+            width: {
+                min: 640,
+                indeal: 1280,
+                max: 1280
+            },
+            height: {
+                min: 480,
+                ideal: 720,
+                max: 720
+            }
+        }
     })
         .then(stream => {
             document.getElementById("vid").srcObject = stream;
