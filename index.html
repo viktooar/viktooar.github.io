@@ -39,7 +39,24 @@
             document.getElementById("vid").srcObject = stream;
         })
 
+  let video = document.getElementById("vid");
+    If (window. DeviceOrientationEvent) {
 
+Console. log("DeviceOrientation is supported");
+
+Window. addEventListener(‘deviceorientation’, function(e){
+
+Console. log("a = "+e. alpha); console. log("P = "+e. beta); console. log("Y = "+e. gamma);
+   video.style.transform = "rotate(15deg)";
+
+}, false);
+
+} else {
+
+Console. log("Orientation is not supported")
+
+}
+    
 </script>
 </body>
 </html>
