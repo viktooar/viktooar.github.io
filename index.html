@@ -39,19 +39,10 @@
             document.getElementById("vid").srcObject = stream;
         })
 
-  let video = document.getElementById("vid");
-    If (window. DeviceOrientationEvent) {
-
-Console. log("DeviceOrientation is supported");
-
-Window. addEventListener(‘deviceorientation’, function(e){
-
-Console. log("a = "+e. alpha); console. log("P = "+e. beta); console. log("Y = "+e. gamma);
-   video.style.transform = "rotate(15deg)";
-
+ window.addEventListener("orientationchange", function() {
+    // Выводим числовое значение ориентации
+    alert(window.orientation);
 }, false);
-
-    }
     
 </script>
 </body>
