@@ -5,7 +5,7 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-                 <a-sphere class="obj_spher1" radius="0.3" color="#EF2D5E"></a-sphere>
+                 <a-asset-item id="low-poly-fox-by-pixelmannen" src="low-poly-fox-by-pixelmannen.dae"></a-asset-item>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
@@ -13,27 +13,6 @@
 			  src="https://code.jquery.com/jquery-3.4.0.js"
 			  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
 			  crossorigin="anonymous"></script>
-    
-    <script>
 
-    $(".obj_spher1").attr('color',"blue");
-	     $(".obj_spher1").onclick = function(){
-        console.log("работает");
-    }
-
-	    
-    $(".obj_spher1").click(function () {
-        console.log("работает");
-	     $(".obj_spher1").attr('color',"red");
-    });
-   $(".obj_spher1").on("touchstart  mousedown", function () {
-        $(".obj_spher1").attr('color',"red");
-    });
-
-   
-
-
-
-</script>
   </body>
 </html>
